@@ -166,5 +166,7 @@ The dataset is structured as a standalone table without relational connections t
 
 This visualization highlights key insights from the sales data, showcasing trends across products, counties, and stores. It provides a clear comparison of top-performing and low-performing categories, seasonal sales fluctuations, and revenue contributions. The analysis helps identify patterns in consumer demand and factors influencing sales performance.
 
-![]()
+![](liquor_Dashboard_viz1.png)
+
+![](liquor_Dashboard_viz2.png)
 
