@@ -1,4 +1,4 @@
-# Liquor Sales Analysis and vizualization
+# Liquor Sales Analysis and visualization
 ![](sales_github_liquor.png)
 
 ## Project Overview
@@ -45,4 +45,102 @@ Before Data Cleaning                                |                         Af
 
 
 
+```sql
+EXPLORING THE DATA SET
+DESCRIBE iowa_liquor_sales;
 
+-- checking for null values
+SELECT *
+FROM iowa_liquor_sales  
+WHERE county IS NULL
+ OR store_name IS NULL
+ OR category_name is null;
+```
+
+```sql
+# DATA CLEANING
+ALTER TABLE iowa_liquor_sales -- changing column name
+CHANGE COLUMN `ï»¿invoice_and_item_number`  invoice_and_item_number varchar(255);
+
+ALTER TABLE iowa_liquor_sales
+RENAME COLUMN sale_dollars TO sales;
+
+UPDATE iowa_liquor_sales
+SET date = str_to_date(date, '%m/%d/%Y');-- changing data type
+ALTER TABLE iowa_liquor_sales
+MODIFY COLUMN date DATE;
+
+-- cleaning store_name irregularities
+SELECT 
+    store_name, 
+    SUBSTRING_INDEX(store_name, '/', 1) AS store_name_clean
+FROM iowa_liquor_sales;
+
+ALTER Table iowa_liquor_sales
+ADD store_name_clean varchar(100);
+
+UPDATE iowa_liquor_sales
+SET store_name_clean = SUBSTRING_INDEX(store_name, '/', 1);
+
+Alter Table iowa_liquor_sales
+ADD store_name_clean_2 varchar(100);
+
+UPDATE iowa_liquor_sales
+SET store_name_clean_2 = TRIM(REGEXP_REPLACE(store_name_clean, '(# ?[0-9]+)', ''));
+
+Alter TABLE iowa_liquor_sales
+ADD store_name_clean_3 varchar(100);
+
+UPDATE iowa_liquor_sales
+SET store_name_clean_3 = TRIM(
+    REGEXP_REPLACE(store_name_clean_2, '[ ]?[A-Za-z-]*[0-9]+|[0-9]+[A-Za-z]*|[0-9]+', ''));
+
+SELECT store_name_clean_2,
+TRIM(
+    REGEXP_REPLACE(store_name_clean_2, '[ ]?[A-Za-z-]*[0-9]+|[0-9]+[A-Za-z]*|[0-9]+', '')
+)AS store_name_clean_3
+from iowa_liquor_sales;
+
+SELECT store_name_clean_3,
+SUBSTRING_INDEX(store_name_clean_3, " -", 1) AS Store_name_clean_4
+FROM iowa_liquor_sales;
+
+Alter TABLE iowa_liquor_sales
+ADD store_name_clean_4 varchar(100);
+
+UPDATE iowa_liquor_sales
+SET store_name_clean_4 = SUBSTRING_INDEX(store_name_clean_3, " -", 1);
+
+SELECT *
+FROM iowa_liquor_sales
+WHERE store_name_clean_4 = '';
+
+UPDATE iowa_liquor_sales
+SET store_name_clean_4 = "Leo1"
+WHERE store_name_clean_4 = '';
+
+UPDATE iowa_liquor_sales
+SET store_name_clean_4 = REPLACE(store_name_clean_4, 'and', '&')
+WHERE store_name_clean_4 like '%and%';
+
+ALTER TABLE iowa_liquor_sales
+DROP COLUMN store_name;
+
+ALTER TABLE iowa_liquor_sales
+DROP COLUMN store_name_clean;
+
+ALTER TABLE iowa_liquor_sales
+DROP COLUMN store_name_clean_2;
+
+ALTER TABLE iowa_liquor_sales
+DROP COLUMN store_name_clean_3;
+
+ALTER TABLE iowa_liquor_sales -- droping column
+DROP COLUMN invalid_county_number;
+
+ALTER TABLE iowa_liquor_sales
+DROP COLUMN store_location;
+
+ALTER TABLE iowa_liquor_sales
+RENAME COLUMN store_name_clean_4 TO store_name
+``
