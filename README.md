@@ -170,3 +170,8 @@ This visualization highlights key insights from the sales data, showcasing trend
 
 ![](liquor_Dashboard_viz2.png)
 
+**To interacte with the Mysql Analysis**
+[Click Here](liquor_analysis.sql)
+
+**To interacte with the Mysql Analysis**
+[Click Here]()
