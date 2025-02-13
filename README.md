@@ -28,10 +28,10 @@ The data set used for ths project is gotten from kaggle
 - Data Modelling
 - Data Analysis
 - Visualization
-- tooltip
-- DAX
-- Quick Measure
-- filters
+   - tooltip
+   - DAX
+   - Quick Measure
+   - filters
 
 ### Data Cleaning
 
@@ -44,6 +44,7 @@ Before Data Cleaning                                |                         Af
 ![](before_cleaning_liquor_sales.png)               |         ![](after_cleaning_liquor_sales.png)
 
 
+**Data cleaning in MySQL**
 
 ```sql
 EXPLORING THE DATA SET
@@ -142,5 +143,10 @@ ALTER TABLE iowa_liquor_sales
 DROP COLUMN store_location;
 
 ALTER TABLE iowa_liquor_sales
-RENAME COLUMN store_name_clean_4 TO store_name
-``
+RENAME COLUMN store_name_clean_4 TO store_name;
+```
+
+### Data Modelling
+The dataset is structured as a standalone table without relational connections to other tables, meaning it does not follow a star or snowflake schema. However, it is linked to the date table for time-based analysis.
+
+![]()
