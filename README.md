@@ -149,4 +149,12 @@ RENAME COLUMN store_name_clean_4 TO store_name;
 ### Data Modelling
 The dataset is structured as a standalone table without relational connections to other tables, meaning it does not follow a star or snowflake schema. However, it is linked to the date table for time-based analysis.
 
-![]()
+![](data_modelling_liquor_sales.png)
+
+### Data Analysis And Insight
+
+- Polk County generates the highest revenue, reaching $60 million in sales and accounting for over 21% of total monthly sales among 100 counties. It also dominates the top 10 highest-performing counties. In comparison, the lowest-performing counties, Fremont and Davis, contribute just 0.012% of total sales. However, while top-selling products maintain steady demand year-round, certain products, such as temporary specials and cream liqours, experience a significant surge in sales during the holiday season.
+- Polk County leads in total sales, generating $60 million monthly and accounting for over 21% of total sales among 100 counties. It dominates the top 10 highest-performing counties, while lower-performing counties like Fremont and Davis contribute just 0.012%.
+#### The key factors driving Top 10 high sales include:
+**Population Density & Urbanization** – The top 10 highest-selling counties are primarily urbanized, featuring more entertainment venues, restaurants, and nightlife hotspots. Cities like Des Moines, Davenport, and Cedar Rapids see increased alcohol demand due to their vibrant social scenes.
+**Demographics & Store Distribution** – A higher population density leads to more liquor stores being strategically located across the county, further driving overall sales.
