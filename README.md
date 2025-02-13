@@ -41,7 +41,7 @@ I converted data types to ensure consistency. I thoroughly cleaned the store nam
 
 Before Data Cleaning                                |                         After Data Cleaning
 :--------------------------------------------------:|:--------------------------------------------:
-
+![](before_cleaning_liquor_sales.png)               |               ![]()
 
 
 
