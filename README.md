@@ -29,9 +29,19 @@ The data set used for ths project is gotten from kaggle
 - Data Analysis
 - Visualization
 - tooltip
+- DAX
+- Quick Measure
+- filters
 
 ### Data Cleaning
 
-I converted Date Data types to maintain consistency. I cleaned the store column by removing attached addresses, numbers, and excess spaces to standardize the data. I also removed Unnecessary columns to reduce redundancy and improve the dataset structure for the analysis.
+I converted data types to ensure consistency. I thoroughly cleaned the store name column by removing attached addresses, numbers, and excess spaces. I removed unnecessary columns to reduce redundancy. To validate data quality and identify errors, I conducted checks for data validity. I also performed exploratory data analysis to examine distinct values and detect null values, confirming that the dataset was error-free and had no missing data.
 
-![]() ----------------------:-----------------![]()
+**Data cleaning in power bi (power query)**
+
+Before Data Cleaning                                |                         After Data Cleaning
+:--------------------------------------------------:|:--------------------------------------------:
+
+
+
+
