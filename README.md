@@ -1,5 +1,5 @@
 # Liquor Sales Analysis and vizualization
-
+![](sales_github_liquor.png)
 
 ## Project Overview
 This project analyzes sales data to understand revenue distribution across different counties and products. The focus is on identifying the highest and lowest-performing counties, comparing their contributions to total sales, and examining the factors driving these differences. Population density, urbanization, and the presence of entertainment venues play a crucial role in sales performance, with urbanized counties contributing significantly more revenue.
