@@ -174,4 +174,4 @@ This visualization highlights key insights from the sales data, showcasing trend
 [Click Here](liquor_analysis.sql)
 
 **To interacte with the Mysql Analysis**
-[Click Here]()
+[Click Here](Data_Analysis_and_Findings_of_Iowa_liquor_Sales.docx)
