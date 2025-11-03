@@ -150,7 +150,7 @@ RENAME COLUMN store_name_clean_4 TO store_name;
 ### Data Modelling
 The dataset is structured as a standalone table without relational connections to other tables, meaning it does not follow a star or snowflake schema. However, it is linked to the date table for time-based analysis.
 
-![](data_modelling_liquor_sales.png)
+![](Data_Model.png)
 
 ### Data Analysis And Insight
 
