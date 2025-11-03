@@ -9,7 +9,7 @@ Additionally, the project explores product-level sales trends, identifying the b
 By leveraging data analysis and visualization, this project offers a comprehensive view of how sales are distributed across locations and product categories, helping businesses and stakeholders make informed decisions.
 
 ## Data Source
-The data set used for ths project is gotten from kaggle
+The data set used for ths project is gotten from kaggle [Clich Here](https://www.kaggle.com/datasets/residentmario/iowa-liquor-sales)
 
 ## Problem Statement
 
