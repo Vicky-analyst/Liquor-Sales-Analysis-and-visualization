@@ -155,19 +155,36 @@ The dataset is structured as a standalone table without relational connections t
 ### Data Analysis And Insight
 
 - American vodkas consistently generate the highest monthly revenue, exceeding $3.5 million and accounting for 13.7% of total sales across 54 products. They also maintain a strong monthly demand of 14%. In contrast, cocktails and imported vodkas rank as the lowest-performing products, with a significantly lower demand of just 0.0005%. However, while top-selling products maintain steady demand year-round, certain products, such as temporary specials and cream liqours, experience a significant surge in sales during the holiday season.
+**MySQL Analysis Result (Filter June 2021)**
+  ![](Product_anal.png)
+  
 - Polk County leads in total sales, generating $60 million monthly and accounting for over 21% of total sales among 100 counties. It dominates the top 10 highest-performing counties, while lower-performing counties like Fremont and Davis contribute just 0.012%.
+  **MySQL Analysis Result (Filter April 2021)**
+  ![](County_Analy.png)
+  
    #### The key factors driving Top 10 high sales include:
    **Population Density & Urbanization** -> The top 10 highest-selling counties are primarily urbanized, featuring more entertainment venues, restaurants, and nightlife hotspots. Cities like Des Moines, Davenport, and Cedar Rapids see increased alcohol demand due to their vibrant social scenes.
+  
   [**Airticle Link**](https://www.extension.iastate.edu/news/navigating-demographic-shifts-new-report-unveils-iowas-changing-urban-and-rural-populations?)
   ![](urban_cause.png)
   
    **Demographics & Store Distribution** –> A higher population density leads to more liquor stores being strategically located across the county, further driving overall sales.
-- Hy-Vee Food Store generates the highest revenue, exceeding $3.6 million monthly, and accounts for 13.04% of total sales among the top 10 performing stores. this Top 10 store are located in county with great population density & urbanization like Plok, Scott, Linn etc. thus explains why they are the top performing stores compared to stores least performing located in the rural county areas like Adams, Fremont and Davis
-- Monthly sales have fluctuated throughout the year but showed a steady increase in the fourth quarter. December 2021 recorded the highest sales of the year at $42 million, reflecting a $4 million increase from the previous month.
-
+- Hy-Vee Food Store generates the highest revenue, exceeding $3.6 million monthly, and accounts for 13.04% of total sales among the top 10 performing stores. this Top 10 store are located in county with great population density & urbanization like Plok, Scott, Linn etc, They also have on Avg 27000 Per Capita Income . thus explains why they are the top performing stores compared to stores least performing located in the rural county areas like Adams, Fremont and Davis
+**MySQL Analysis Result (Filter September 2021)**
+ ![](Store_Analy.png)
+ 
+  [**Airticle Link**](https://en.wikipedia.org/wiki/List_of_Iowa_locations_by_per_capita_income?)
+  ![](Per_Capita.png)
+  
+- Monthly sales have fluctuated throughout the year but showed a steady increase in the fourth quarter. December 2021 recorded the highest sales of the year at $42 million, reflecting a $4 million increase from the previous month. **Wednesday** Cummulative Sales generate the highest sales at every second month of each quarter, Report shows wednesday to the most hectic service day in the United State
+**MySQL Analysis Result (Filter September 2021)**
+ ![](Wed_Analy.png)  
+  
+  [**Airticle Link**](https://www.pipedrive.com/en/blog/whats-the-best-weekday-to-sell-infographic?)
+  ![](Wed-Airticle.png)
+  
 **To interacte with the Iowa Sales Analysis In MySQL**
 [Click Here](liquor_analysis.sql)
-
 
 ### Data Visualization
 
