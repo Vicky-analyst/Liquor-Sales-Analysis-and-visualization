@@ -184,6 +184,9 @@ This visualization highlights key insights from the sales data, showcasing trend
 **To interacte with the Iowa Liquor Dashboard**
 [Click Here](https://app.powerbi.com/groups/me/reports/21995906-657b-4704-9b00-44314d20f83b/8b551faf76e189e5424d?experience=power-bi)
 
+### Video Of This Project
+[▶️ Watch Project Video on LinkedIn](https://www.linkedin.com/posts/victoryazubike_dataanalytics-dataprojects-datascience-activity-7355972871690633217-JMqm)
+
 ## Recommendation
 
 - **Ensure Consistent Supply of High-Demand Products**
