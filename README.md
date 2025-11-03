@@ -163,19 +163,26 @@ The dataset is structured as a standalone table without relational connections t
 - Hy-Vee Food Store generates the highest revenue, exceeding $3.6 million monthly, and accounts for 13.04% of total sales among the top 10 performing stores. this Top 10 store are located in county with great population density & urbanization like Plok, Scott, Linn etc. thus explains why they are the top performing stores compared to stores least performing located in the rural county areas like Adams, Fremont and Davis
 - Monthly sales have fluctuated throughout the year but showed a steady increase in the fourth quarter. December 2021 recorded the highest sales of the year at $42 million, reflecting a $4 million increase from the previous month.
 
+**To interacte with the Iowa Sales Analysis In MySQL**
+[Click Here](liquor_analysis.sql)
+
+
 ### Data Visualization
 
 This visualization highlights key insights from the sales data, showcasing trends across products, counties, and stores. It provides a clear comparison of top-performing and low-performing categories, seasonal sales fluctuations, and revenue contributions. The analysis helps identify patterns in consumer demand and factors influencing sales performance.
 
+**Sales Dashboard**
 ![](liquor_Dashboard_viz1.png)
 
+**Time Series Dashboard**
 ![](liquor_Dashboard_viz2.png)
 
-**To interacte with the Mysql Analysis**
-[Click Here](liquor_analysis.sql)
+**Recommendation & Report Dashboard**
+![](liquor_Dashboard_viz2.png)
 
-**To interacte with the Mysql Analysis**
-[Click Here](Data_Analysis_and_Findings_of_Iowa_liquor_Sales.docx)
+
+**To interacte with the Iowa Liquor Dashboard**
+[Click Here](https://app.powerbi.com/groups/me/reports/21995906-657b-4704-9b00-44314d20f83b/8b551faf76e189e5424d?experience=power-bi)
 
 ## Recommendation
 
