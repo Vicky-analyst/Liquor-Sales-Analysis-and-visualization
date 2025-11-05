@@ -159,6 +159,7 @@ The dataset is structured as a standalone table without relational connections t
   ![](Product_anal.png)
   
 - Polk County leads in total sales, generating $60 million monthly and accounting for over 21% of total sales among 100 counties. It dominates the top 10 highest-performing counties, while lower-performing counties like Fremont and Davis contribute just 0.012%.
+  
   **MySQL Analysis Result (Filter April 2021)**
   ![](County_Analy.png)
   
@@ -170,6 +171,7 @@ The dataset is structured as a standalone table without relational connections t
   
    **Demographics & Store Distribution** –> A higher population density leads to more liquor stores being strategically located across the county, further driving overall sales.
 - Hy-Vee Food Store generates the highest revenue, exceeding $3.6 million monthly, and accounts for 13.04% of total sales among the top 10 performing stores. this Top 10 store are located in county with great population density & urbanization like Plok, Scott, Linn etc, They also have on Avg 27000 Per Capita Income . thus explains why they are the top performing stores compared to stores least performing located in the rural county areas like Adams, Fremont and Davis
+
 **MySQL Analysis Result (Filter September 2021)**
  ![](Store_Analy.png)
  
@@ -177,6 +179,7 @@ The dataset is structured as a standalone table without relational connections t
   ![](Per_Capita.png)
   
 - Monthly sales have fluctuated throughout the year but showed a steady increase in the fourth quarter. December 2021 recorded the highest sales of the year at $42 million, reflecting a $4 million increase from the previous month. **Wednesday** Cummulative Sales generate the highest sales at every second month of each quarter, Report shows wednesday to the most hectic service day in the United State
+  
 **MySQL Analysis Result (Filter September 2021)**
  ![](Wed_Analy.png)  
   
